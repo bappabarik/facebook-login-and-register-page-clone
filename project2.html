@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #1877f2;
+            margin: auto;
+            margin-bottom: 14px;
+            margin-top: 45px;
+            font-family: sans-serif;
+            font-size: 46px;
+            text-align: center;
+        }
+
+        .container {
+            /* border: 1px solid black; */
+            background-color: whitesmoke;
+            border-radius: 7px;
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.274);
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            height: 545px;
+            width: 430px;
+        }
+
+        /* .box {
+            border: 1px solid red;
+        } */
+
+        .box1 {
+            border-bottom: 1px solid rgb(206, 204, 204);
+            /* margin: 14px; */
+            padding: 13px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup {
+            color: #1c1e21;
+            font-weight: bold;
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 0;
+        }
+
+        .cap {
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            color: #1c1e2194;
+        }
+
+        .box2 {
+            padding: 13px 10px;
+            display: flex;
+
+
+        }
+
+        .nmsrn {
+            margin: auto;
+            width: 175px;
+            height: 35px;
+            font-size: 17px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15px;
+        }
+
+        .mepss {
+            margin-bottom: 13px;
+            height: 35px;
+            font-size: 17px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+        }
+
+        .lvl {
+            padding: 0px 15px;
+        }
+
+        .spanbox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .elembox {
+            height: 35px;
+            width: 125px;
+            margin: 9px 0px;
+            font-size: 17px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+            padding-left: 5px;
+        }
+
+        .box4 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .sexbox {
+            margin: 9px 0px;
+            margin-bottom: 0px;
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            height: 35px;
+            width: 125px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+            border-radius: 5px;
+        }
+
+        .para {
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            color: #777;
+            font-size: 11px;
+            display: flex;
+            text-align: left;
+            padding-left: 10px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        p {
+            padding: 0px 5px;
+            height: 23px;
+            width: 410px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif !important;
+        }
+
+        button {
+            margin: 15px auto;
+            text-align: center;
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif !important;
+            background: none;
+            background-color: #00a400;
+            border: none;
+            border-radius: 6px;
+            box-shadow: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            height: 36px;
+            width: 200px;
+            overflow: hidden;
+            padding: 0px 32px;
+            text-shadow: none;
+        }
+
+        button:hover {
+            background: linear-gradient(#79bc64, #578843);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input:focus {
+            outline: none;
+        }
+        .footer{
+            display: flex;
+            height: 23px;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>facebook</h1>
+    <div class="container">
+        <div class="box box1" id="signuptxt">
+            <div class="box signup">Sign Up</div>
+            <div class="box cap">It's quick and easy.</div>
+        </div>
+        <div class="box box2" id="inputnm">
+            <input type="text" placeholder="First name" class="nmsrn">
+            <input type="text" placeholder="Surname" class="nmsrn">
+        </div>
+        <div class="box box3" id="inptme">
+            <input type="text" placeholder="Mobile number or email address" class="mepss">
+            <input type="password" placeholder="New password" class="mepss">
+        </div>
+        <div class="box lvl cap">
+            Date of birth?
+        </div>
+        <span class="box spanbox">
+            <select name="day" id="day" class="elembox">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6" selected>6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select name="month" id="month" class="elembox">
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5" selected>May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            <select name="year" id="year" class="elembox">
+                <option value="2022" selected>2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+                <option value="1987">1987</option>
+                <option value="1986">1986</option>
+                <option value="1985">1985</option>
+                <option value="1984">1984</option>
+                <option value="1983">1983</option>
+                <option value="1982">1982</option>
+                <option value="1981">1981</option>
+                <option value="1980">1980</option>
+                <option value="1979">1979</option>
+                <option value="1978">1978</option>
+                <option value="1977">1977</option>
+                <option value="1976">1976</option>
+                <option value="1975">1975</option>
+                <option value="1974">1974</option>
+                <option value="1973">1973</option>
+                <option value="1972">1972</option>
+                <option value="1971">1971</option>
+                <option value="1970">1970</option>
+                <option value="1969">1969</option>
+                <option value="1968">1968</option>
+                <option value="1967">1967</option>
+                <option value="1966">1966</option>
+                <option value="1965">1965</option>
+                <option value="1964">1964</option>
+                <option value="1963">1963</option>
+                <option value="1962">1962</option>
+                <option value="1961">1961</option>
+                <option value="1960">1960</option>
+                <option value="1959">1959</option>
+                <option value="1958">1958</option>
+                <option value="1957">1957</option>
+                <option value="1956">1956</option>
+                <option value="1955">1955</option>
+                <option value="1954">1954</option>
+                <option value="1953">1953</option>
+                <option value="1952">1952</option>
+                <option value="1951">1951</option>
+                <option value="1950">1950</option>
+                <option value="1949">1949</option>
+                <option value="1948">1948</option>
+                <option value="1947">1947</option>
+                <option value="1946">1946</option>
+                <option value="1945">1945</option>
+                <option value="1944">1944</option>
+                <option value="1943">1943</option>
+                <option value="1942">1942</option>
+                <option value="1941">1941</option>
+                <option value="1940">1940</option>
+                <option value="1939">1939</option>
+                <option value="1938">1938</option>
+                <option value="1937">1937</option>
+                <option value="1936">1936</option>
+                <option value="1935">1935</option>
+                <option value="1934">1934</option>
+                <option value="1933">1933</option>
+                <option value="1932">1932</option>
+                <option value="1931">1931</option>
+                <option value="1930">1930</option>
+                <option value="1929">1929</option>
+                <option value="1928">1928</option>
+                <option value="1927">1927</option>
+                <option value="1926">1926</option>
+                <option value="1925">1925</option>
+                <option value="1924">1924</option>
+                <option value="1923">1923</option>
+                <option value="1922">1922</option>
+                <option value="1921">1921</option>
+                <option value="1920">1920</option>
+                <option value="1919">1919</option>
+                <option value="1918">1918</option>
+                <option value="1917">1917</option>
+                <option value="1916">1916</option>
+                <option value="1915">1915</option>
+                <option value="1914">1914</option>
+                <option value="1913">1913</option>
+                <option value="1912">1912</option>
+                <option value="1911">1911</option>
+                <option value="1910">1910</option>
+                <option value="1909">1909</option>
+                <option value="1908">1908</option>
+                <option value="1907">1907</option>
+                <option value="1906">1906</option>
+                <option value="1905">1905</option>
+            </select>
+        </span>
+        <div class="box lvl cap">
+            Gender?
+        </div>
+        <div class="box box4">
+            <span class="box sexbox">
+                <label for="famale">Female</label>
+                <input type="radio" name="sex" id="female">
+            </span>
+            <span class="box sexbox">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="male">
+            </span>
+            <span class="box sexbox">
+                <label for="custom">Custom</label>
+                <input type="radio" name="sex" id="custom">
+            </span>
+        </div>
+        <div class="box para">
+            <p>
+                By clicking Sign Up, you agree to our <a href="http://#" target="_blank"> Terms, Data Policy</a> and <a
+                    href="http://#" target="_blank">Cookie Policy</a>Cookie Policy. You may receive SMS
+                notifications from us and can opt out at any time
+            </p>
+        </div>
+        <button>
+            Sign Up
+        </button>
+        <div class="box footer">
+           <a href="http://127.0.0.1:5500/demo1.html" target="_blank">Already have an account?</a>
+        </div>
+    </div>
+</body>
+
+</html>
